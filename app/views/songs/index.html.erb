@@ -1,0 +1,18 @@
+<h1>Songs</h1>
+
+<table>
+  <thead><tr>
+    <th>Title</th>
+    <th>Year</th>
+    <th>Artist</th>
+    <th>Genre</th>
+  </tr></thead>
+  <tbody><% @songs.each do |s| %>
+    <tr>
+      <td><%= link_to s.title, s %></td>
+      <td><%= s.release_year %></td>
+      <td><%= s.artist_name %></td>
+      <td><%= s.genre %></td>
+    </tr>
+  <% end %></tbody>
+</table>
