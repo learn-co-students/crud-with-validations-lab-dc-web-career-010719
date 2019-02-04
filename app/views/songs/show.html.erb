@@ -1,0 +1,18 @@
+<h1>Details for <%= @song.title %></h1>
+
+<ul>
+  <li>Title: <%= @song.title %></li>
+  <li>Released: <%= @song.released %></li>
+  <li>Release year:
+    <% if @song.release_year %>
+      <%= @song.release_year %>
+    <% else %>
+      n/a
+    <% end %></li>
+  <li>Artist: <%= @song.artist_name %></li>
+  <li>Genre: <%= @song.genre %></li>
+</ul>
+<br>
+
+<%= link_to "Edit This Song", edit_song_path(@song) %><br>
+<%= link_to "Back to Song Index", songs_path %>
