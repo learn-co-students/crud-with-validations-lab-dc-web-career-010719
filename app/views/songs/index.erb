@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <% @songs.first.attributes.each do |attr| %>
+      <th><%= attr[0].titleize %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @songs.each do |song| %>
+    <tr>
+      <% song.attributes.each do |attr| %>
+      <td><%= song[attr[0]] %></td>
+      <% end %>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
