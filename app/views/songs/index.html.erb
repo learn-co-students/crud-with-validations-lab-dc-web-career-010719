@@ -1,0 +1,24 @@
+<h1>Songs All</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Song Title</th>
+    <th>Artist</th>
+    <th>Genre</th>
+    <th>Release Year</th>
+  </tr>
+  </thead>
+  <tbody>
+    <% @songs.each do |song| %>
+      <%= render "song_index", song: song %>
+    <% end %>
+  </tbody>
+</table>
+
+<p></p>
+
+<div class=""><%= link_to "Create New Song", new_song_path %>
+</div>
+
+<%= button_to "Show Me the Money", new_song_path, method: :get %>
