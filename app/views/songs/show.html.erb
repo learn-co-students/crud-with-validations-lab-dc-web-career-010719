@@ -1,0 +1,14 @@
+<h1>Song#Profile</h1>
+<p>Title: <%=@song.title%></p>
+<%if @song.released == true%>
+<p>Released: Yes</p>
+<p>Release Year: <%=@song.release_year%></p>
+<%else%>
+<p>Released: No</p>
+<p>Release Year: n/a</p>
+<%end%>
+<p>Artist: <%=@song.artist_name%></p>
+<p>Genre: <%=@song.genre%></p>
+<p><%=button_to "Edit", edit_song_url, method: :get%></p>
+<p><%=button_to "Delete", @song, method: :delete, data: {confirm: "Are You Sure?"}%></p>
+<p><%=button_to "Back to index", songs_path, method: :get%></p>
