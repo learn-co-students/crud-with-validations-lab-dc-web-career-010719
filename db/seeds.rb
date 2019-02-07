@@ -1,0 +1,5 @@
+Song.create(title: 'song1', released: true, release_year: 1955, artist_name: 'billy idol', genre: 'rock')
+Song.create(title: 'song2', released: true, release_year: 1965, artist_name: 'billy jackson', genre: 'classical')
+Song.create(title: 'song3', released: true, release_year: 1975, artist_name: 'billy billy', genre: 'jazz')
+Song.create(title: 'song4', released: true, release_year: 1985, artist_name: 'billy todd', genre: 'hipster')
+Song.create(title: 'song5', released: true, release_year: 1995, artist_name: 'billy nothing', genre: 'hipster')
